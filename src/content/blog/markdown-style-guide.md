@@ -5,11 +5,13 @@ pubDate: "Jun 19 2024"
 heroImage: "/blog-placeholder-1.jpg"
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+<!-- textlint-disable ja-technical-writing/sentence-length -->
+
+以下は、AstroでMarkdownコンテンツを書く際に使用できる、基本的なMarkdown構文のサンプルです。
 
 ## Headings
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+以下のHTMLの `<h1>` から `<h6>` 要素は6段階のセクション見出しを表します。`<h1>`は最も高いセクションレベルであり、`<h6>`は最も低いセクションレベルです。
 
 # H1
 
@@ -25,9 +27,11 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 
 ## Paragraph
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+今日は穏やかな朝を迎えた。外を見ると、澄んだ青空が広がり、風もほとんどなく、気温も程よい。こんな日は、何をするにも気持ちが良いものだ。朝食には、トーストとスクランブルエッグ、そして新鮮なサラダを用意した。少し濃いめのコーヒーを添えると、食卓が一層華やかになる。食べながらふと窓の外を眺めると、庭に咲いている花々が朝日を浴びて輝いていた。特に赤いバラは色鮮やかで、見る者の心を和ませる。
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+朝食を終えた後は、散歩に出かけることとした。近所には小さな公園があり、そこまでの道のりは程よい距離だ。 道中、黄色や白の小さな花の咲く雑草が道端に点在していて、それもまた美しい。 公園に着くと、子どもたちが元気に遊んでいる姿が目に入った。 ブランコや滑り台で楽しそうに笑う声を聞くと、こちらまで元気をもらえるような気がする。
+
+その後は、ベンチに座りながらゆっくりと本を読む時間を取った。静かな環境でページをめくると、日々の忙しさを忘れ、物語の世界に没入できる。時折吹くそよ風が心地よく、まさに至福のひとときだった。この穏やかな日常が、いつまでも続けば良い。
 
 ## Images
 
@@ -39,11 +43,11 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ### Output
 
-![blog placeholder](/blog-placeholder-about.jpg)
+![blog placeholder](/astro-blog/blog-placeholder-about.jpg)
 
 ## Blockquotes
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+blockquote要素は他のソースから引用された内容を表し、オプションで引用を`footer`要素または`cite`要素内に記述する必要があり、オプションで注釈や省略形などのインライン変更を記述ができます。
 
 ### Blockquote without attribution
 
@@ -95,7 +99,8 @@ The blockquote element represents content that is quoted from another source, op
 
 ### Syntax
 
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
+また、言語固有の構文を強調表示するには、最初の3つのバックスティックの後に言語名を1語だけ記述します。
+（例：html、javascript、css、markdown、typescript、txt、bash）
 
 ````markdown
 ```html
