@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "prettier": "^3.4.2",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "textlint": "^14.4.0",
+    "textlint-rule-preset-ja-technical-writing": "^10.0.1"
   }
 }
