@@ -6,6 +6,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://yuys13.github.io",
-  base: "/astro-blog",
+  base: "/astro-sandbox",
   integrations: [mdx(), sitemap()],
 });
