@@ -43,7 +43,7 @@ heroImage: "/blog-placeholder-1.jpg"
 
 ### Output
 
-![blog placeholder](/astro-blog/blog-placeholder-about.jpg)
+![blog placeholder](/astro-sandbox/blog-placeholder-about.jpg)
 
 ## Blockquotes
 
