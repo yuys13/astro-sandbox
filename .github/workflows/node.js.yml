@@ -25,7 +25,7 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run astro check
-    - run: npm run build
+        cache: 'pnpm'
+    - run: pnpm i --frozen-lockfile
+    - run: pnpm run astro check
+    - run: pnpm run build
