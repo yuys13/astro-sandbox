@@ -1,0 +1,6 @@
+{
+  "tasks": {
+    "build": "pnpm install && pnpm exec textlint src/content/blog/* && pnpm run build",
+    "test": "pnpm run astro check"
+  }
+}

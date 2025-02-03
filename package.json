@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -21,5 +22,6 @@
     "prettier-plugin-astro": "^0.14.1",
     "textlint": "^14.4.2",
     "textlint-rule-preset-ja-technical-writing": "^10.0.2"
-  }
+  },
+  "packageManager": "pnpm@10.1.0"
 }
