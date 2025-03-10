@@ -13,11 +13,11 @@
     "@astrojs/mdx": "^4.1.0",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.4.1",
+    "astro": "^5.4.2",
     "typescript": "^5.8.2"
   },
   "devDependencies": {
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "textlint": "^14.4.2",
     "textlint-rule-preset-ja-technical-writing": "^10.0.2"
