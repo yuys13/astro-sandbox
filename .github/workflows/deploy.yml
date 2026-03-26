@@ -22,9 +22,9 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Install, build, and upload your site
         uses: withastro/action@74d664f13f9f9063e37b49d74a74613dbf94db3c # v6.0.0
-        # with:
+        with:
         # path: . # リポジトリ内のAstroプロジェクトのルートロケーション。(オプション)
-        # node-version: 18 # サイト構築に使用するNodeのバージョン。デフォルトは18です。（オプション）
+          node-version: 22 # サイト構築に使用するNodeのバージョン。デフォルトは18です。（オプション）
         # package-manager: pnpm@latest # 依存関係のインストールとサイトのビルドに使用する Node パッケージマネージャ。ロックファイルに基づいて自動的に検出されます。(オプション)
 
   deploy:
