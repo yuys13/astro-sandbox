@@ -23,7 +23,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@903f9c1a6ebcba6cf41d87230be49611ac97822e # v6.0.3
       - name: Install, build, and upload your site
-        uses: withastro/action@44706356b4eb735f8b9035699eb4796241a040c4 # v6.1.0
+        uses: withastro/action@b7d53628f8b666036b0238aadb0b984a2a489f26 # v6.1.1
         with:
         # path: . # リポジトリ内のAstroプロジェクトのルートロケーション。(オプション)
           node-version: 22 # サイト構築に使用するNodeのバージョン。デフォルトは18です。（オプション）
