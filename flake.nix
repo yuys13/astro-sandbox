@@ -42,12 +42,18 @@
             packages = with pkgs; [
               nodejs_24
               pnpm
+              astro-language-server
+              typescript
             ];
 
             shellHook = ''
+              export NODE_PATH="${pkgs.typescript}/lib/node_modules''${NODE_PATH:+:''$NODE_PATH}"
+
               echo "🔥 Astro Sandbox Dev Shell 🚀"
               echo "Node.js $(node -v)"
               echo "pnpm $(pnpm -v)"
+              echo "Astro LS $(astro-ls --version 2>/dev/null || echo 'not found')"
+              echo "TypeScript $(tsc --version 2>/dev/null || echo 'not found')"
             '';
           };
         };
