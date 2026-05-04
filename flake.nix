@@ -46,8 +46,8 @@
 
             shellHook = ''
               echo "🔥 Astro Sandbox Dev Shell 🚀"
-              echo "Node.js \$(node -v)"
-              echo "pnpm \$(pnpm -v)"
+              echo "Node.js $(node -v)"
+              echo "pnpm $(pnpm -v)"
             '';
           };
         };
