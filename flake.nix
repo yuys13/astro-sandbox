@@ -47,13 +47,13 @@
             ];
 
             shellHook = ''
+              export NODE_PATH="${pkgs.typescript}/lib/node_modules''${NODE_PATH:+:''$NODE_PATH}"
+
               echo "🔥 Astro Sandbox Dev Shell 🚀"
               echo "Node.js $(node -v)"
               echo "pnpm $(pnpm -v)"
               echo "Astro LS $(astro-ls --version 2>/dev/null || echo 'not found')"
               echo "TypeScript $(tsc --version 2>/dev/null || echo 'not found')"
-
-              export NODE_PATH="${pkgs.typescript}/lib/node_modules:$NODE_PATH"
             '';
           };
         };
