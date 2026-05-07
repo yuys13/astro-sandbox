@@ -27,6 +27,14 @@ jobs:
       - name: Format check
         run: nix fmt -- --fail-on-change --no-cache
 
-      - name: Build check
-        run: |
-          nix develop --command bash -c "pnpm install && pnpm build"
+      - name: Install dependencies
+        run: nix develop --command pnpm install --frozen-lockfile
+
+      - name: Astro check
+        run: nix develop --command pnpm run astro check
+
+      - name: Textlint
+        run: nix develop --command pnpm exec textlint src/content/blog/*
+
+      - name: Build
+        run: nix develop --command pnpm build
