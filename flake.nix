@@ -28,16 +28,18 @@
         {
           treefmt.config = {
             projectRootFile = "flake.nix";
-            settings.global.excludes = [ "pnpm-lock.yaml" ];
-            programs.nixfmt.enable = true;
-            programs.yamlfmt.enable = true;
-            programs.prettier = {
-              enable = true;
-              excludes = [
-                "*.yml"
-                "*.yaml"
-              ];
+            programs = {
+              nixfmt.enable = true;
+              prettier = {
+                enable = true;
+                excludes = [
+                  "*.yml"
+                  "*.yaml"
+                ];
+              };
+              yamlfmt.enable = true;
             };
+            settings.global.excludes = [ "pnpm-lock.yaml" ];
           };
 
           devShells.default = pkgs.mkShell {
