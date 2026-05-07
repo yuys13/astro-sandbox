@@ -22,3 +22,12 @@ updates:
       - dependency-name: "*"
         update-types:
           - version-update:semver-major
+
+  - package-ecosystem: "nix"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      nix:
+        patterns:
+          - "*"
