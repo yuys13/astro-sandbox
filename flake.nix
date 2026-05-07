@@ -28,6 +28,7 @@
         {
           treefmt.config = {
             projectRootFile = "flake.nix";
+            settings.global.excludes = [ "pnpm-lock.yaml" ];
             programs.nixfmt.enable = true;
             programs.yamlfmt.enable = true;
             programs.prettier = {
