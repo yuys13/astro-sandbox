@@ -1,5 +1,4 @@
 name: Deploy to GitHub Pages
-
 on:
   # `main` ブランチにプッシュするたびにワークフローを実行します
   # 異なるブランチ名を使用する場合は、`main` をブランチ名に置き換えてください
@@ -7,13 +6,11 @@ on:
     branches: [main]
   # このワークフローを GitHub の Actions タブから手動で実行できるようにします。
   workflow_dispatch:
-
 # このジョブがリポジトリをクローンし、ページデプロイメントを作成することを許可します。
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,10 +22,9 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@b7d53628f8b666036b0238aadb0b984a2a489f26 # v6.1.1
         with:
-        # path: . # リポジトリ内のAstroプロジェクトのルートロケーション。(オプション)
+          # path: . # リポジトリ内のAstroプロジェクトのルートロケーション。(オプション)
           node-version: 22 # サイト構築に使用するNodeのバージョン。デフォルトは18です。（オプション）
-        # package-manager: pnpm@latest # 依存関係のインストールとサイトのビルドに使用する Node パッケージマネージャ。ロックファイルに基づいて自動的に検出されます。(オプション)
-
+          # package-manager: pnpm@latest # 依存関係のインストールとサイトのビルドに使用する Node パッケージマネージャ。ロックファイルに基づいて自動的に検出されます。(オプション)
   deploy:
     needs: build
     runs-on: ubuntu-latest
