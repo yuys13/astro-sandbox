@@ -22,7 +22,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "textlint": "^14.8.4",
     "textlint-rule-preset-ja-technical-writing": "^10.0.2",
-    "vite": "^8.0.11"
+    "vite": "^8.0.12"
   },
   "packageManager": "pnpm@11.0.6"
 }
