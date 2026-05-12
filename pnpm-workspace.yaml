@@ -1,4 +1,4 @@
-minimumReleaseAge: 1440
+minimumReleaseAge: 1440 # 1 day (in minutes)
 allowBuilds:
   esbuild: false
   sharp: false
