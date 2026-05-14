@@ -32,5 +32,3 @@ updates:
       nix:
         patterns:
           - "*"
-    cooldown:
-      default-days: 1
