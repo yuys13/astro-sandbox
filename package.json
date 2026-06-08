@@ -14,7 +14,7 @@
     "@astrojs/mdx": "^5.0.6",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "^6.4.2",
+    "astro": "^6.4.4",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
@@ -22,7 +22,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "textlint": "^14.8.4",
     "textlint-rule-preset-ja-technical-writing": "^10.0.2",
-    "vite": "^8.0.14"
+    "vite": "^8.0.16"
   },
   "packageManager": "pnpm@11.0.6"
 }
