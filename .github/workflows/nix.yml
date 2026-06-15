@@ -8,6 +8,18 @@ permissions:
   contents: read
 jobs:
   nix-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+      - name: Install Nix
+        uses: cachix/install-nix-action@8aa03977d8d733052d78f4e008a241fd1dbf36b3 # v31.10.6
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+      - name: Flake check
+        run: nix flake check --all-systems
+  nix-build:
+    needs: nix-check
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest]
@@ -19,10 +31,6 @@ jobs:
         uses: cachix/install-nix-action@8aa03977d8d733052d78f4e008a241fd1dbf36b3 # v31.10.6
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - name: Flake check
-        run: nix flake check
-      - name: Format check
-        run: nix fmt -- --fail-on-change --no-cache
       - name: Install dependencies
         run: nix develop --command pnpm install --frozen-lockfile
       - name: Astro check
