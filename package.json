@@ -24,5 +24,17 @@
     "textlint-rule-preset-ja-technical-writing": "^10.0.2",
     "vite": "^8.0.16"
   },
-  "packageManager": "pnpm@11.8.0"
+  "packageManager": "pnpm@11.8.0",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.18.0",
+      "onFail": "download"
+    },
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.8.0",
+      "onFail": "download"
+    }
+  }
 }
