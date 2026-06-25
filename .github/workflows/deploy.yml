@@ -21,10 +21,13 @@ jobs:
         uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6.0.9
       - name: Install, build, and upload your site
         uses: withastro/action@b7d53628f8b666036b0238aadb0b984a2a489f26 # v6.1.1
-        with:
-          # path: . # リポジトリ内のAstroプロジェクトのルートロケーション。(オプション)
-          node-version: 24 # サイト構築に使用するNodeのバージョン。デフォルトは18です。（オプション）
-          # package-manager: pnpm@latest # 依存関係のインストールとサイトのビルドに使用する Node パッケージマネージャ。ロックファイルに基づいて自動的に検出されます。(オプション)
+        # with:
+        #   path: . # リポジトリ内のAstroプロジェクトのルート位置です。（オプション）
+        #   node-version: 24 # サイトのビルドに使用するNodeのバージョンです。デフォルトは24です。（オプション）
+        #   package-manager: pnpm@latest # 依存関係のインストールとサイトのビルドに使用するNodeパッケージマネージャーです。ロックファイルに基づいて自動検出されます。（オプション）
+        #   build-cmd: pnpm run build # サイトをビルドするためのコマンドです。デフォルトでパッケージのbuildスクリプトを実行します。（オプション）
+        # env:
+        #   PUBLIC_POKEAPI: 'https://pokeapi.co/api/v2' # 変数の値にはシングルクォートを使用してください。（オプション）
   deploy:
     needs: build
     runs-on: ubuntu-latest
