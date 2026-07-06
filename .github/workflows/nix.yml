@@ -32,7 +32,7 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-unstable
       - name: Install dependencies
-        run: nix develop --command pnpm install --frozen-lockfile
+        run: nix develop --command pnpm install --frozen-lockfile --network-concurrency 1 --child-concurrency 1
       - name: Astro check
         run: nix develop --command pnpm run astro check
       - name: Textlint
