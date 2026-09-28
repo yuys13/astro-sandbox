@@ -14,15 +14,15 @@
     "@astrojs/mdx": "^7.0.8",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.3.3",
+    "astro": "^7.3.5",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "prettier": "^3.9.8",
+    "prettier": "^3.9.9",
     "prettier-plugin-astro": "^0.14.1",
     "textlint": "^14.8.4",
     "textlint-rule-preset-ja-technical-writing": "^10.0.2",
-    "vite": "^8.3.0"
+    "vite": "^8.3.1"
   },
   "packageManager": "pnpm@11.25.0",
   "devEngines": {
